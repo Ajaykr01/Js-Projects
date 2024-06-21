@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./bg.jpg);
+  background-repeat: no-repe at;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 80px;
+}
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.clock-box {
+  height: 13rem;
+  width: 33rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 6rem;
+  box-shadow: 1px 1px 15px 10px azure;
+  border-radius: 20px;
+}

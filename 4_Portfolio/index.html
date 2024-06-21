@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Nav-section  -->
+    <div class="navbar" id="nav">
+      <div class="res_nav">
+      <div class="logo-container">
+        <h1>𝐀𝐣𝐚𝐲</h1>
+      </div>
+      <span class="material-symbols-outlined" id="menu-icon"> menu </span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero-section"><span class="material-symbols-outlined">home</span>Home</a>
+        <a href="#about"><span class="material-symbols-outlined">account_circle</span>About</a>
+        <a href="#projects"><span class="material-symbols-outlined">code</span> Projects</a>
+        <a href="#contact"><span class="material-symbols-outlined">contacts_product</span>Contact</a>
+      </div>
+      <div class="on-off-btn" onclick="myfunction()">
+        <span class="material-symbols-outlined"> light_mode </span>
+      </div>
+      <a href="#" class="to-top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </a>
+    </div>
+
+    <!-- Hero-section  -->
+    <div class="hero-section" id="hero-section">
+      <div class="hero">
+        <div class="intro-div">
+          <p class="para1">Hello👋 I'm</p>
+          <span id="element" class="para2"></span>
+          <p class="para3">My name is Ajay and i'm a Web Developer.</p>
+        </div>
+        <div class="btn">
+          <button>Hire Me</button>
+          <button id="cv" onclick="printPdf()">Download CV<span class="material-symbols-outlined">description</span>
+            <iframe id="pdfFrame" src="./my-resume.pdf" style="display: none;"></iframe>
+          </button>
+        </div>
+        <div class="icons">
+          <a href="https://github.com/Ajaykr01" target="_blank"><img src="./icons/github.png"/></a>
+          <a href="https://www.linkedin.com/in/ajay-kumar-a921a624b" target="_blank"><img src="./icons/linkedin.png"/></a>
+          <a href="https://www.instagram.com/mr_ajay_3472/" target="_blank"><img src="./icons/instagram.png"/></a>
+          <a href="https://www.youtube.com/@technicalajay2529" target="_blank"><img src="./icons/yt.png"></a>
+        </div>
+      </div>
+      <img src="./hero.jpg" id="hero-img" />
+    </div>
+
+    <!-- About-section  -->
+    <div class="about-container">
+      <h1 id="about">☞𝑨𝒃𝒐𝒖𝒕 𝒎𝒆</h1>
+      <div class="about-section">
+        <div class="about-box">
+          <div class="about-items">
+            <img src="./intro-hero.jpg" />
+            <h1>Web Developer🧑‍💻</h1>
+            <p>
+              <i>My name is Ajay and i'm a 
+                <b>passionate Web Developer.</b> 
+                and if i talk about my acadmic background concern i have completed my
+                <b>intermediate </b>
+                in 2022 and currently i'm doing
+                <b>BCA</b>
+                from Patna, Thank you😊 :)✍️
+              </i>
+            </p>
+            <button>Hire me</button>
+          </div>
+        </div>
+        <div class="skills-box">
+          <div class="skill-items">
+            <p>HTML</p>
+            <div class="container">
+              <div class="html">90%</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+              <div class="css">80%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="js">30%</div>
+            </div>
+            <p>C</p>
+            <div class="container">
+              <div class="c">40%</div>
+            </div>
+            <p>Python</p>
+            <div class="container">
+              <div class="python">20%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects-section  -->
+    <div class="projects-container">
+      <h1 id="projects">𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬</h1>
+      <div class="projects-box">
+        <img src="./images/img1.png" />
+        <img src="./images/img2.png" />
+        <img src="./images/img3.png" />
+        <img src="./images/img4.png" />
+      </div>
+    </div>
+
+    <!-- Contact-section  -->
+    <div class="contact-box" id="contact">
+      <h1 id="heading">Let's Work Together</h1>
+      <p id="contact-para">Do you have a project in your mind , contact me here
+        <span class="material-symbols-outlined">south</span>
+      </p>
+      <div class="boxes-container">
+        <div class="box1">
+          <div class="find">
+            <h1>Find Me<span class="material-symbols-outlined">double_arrow</span></h1>
+          </div>
+          <div class="mail">
+            <span class="material-symbols-outlined"> mail </span>
+            <input type="email" placeholder="ajaykumar87577@gmail.com" />
+          </div>
+          <div class="phone">
+            <span class="material-symbols-outlined"> call </span>
+            <input type="number" placeholder="Phone: 8757733438" />
+          </div>
+        </div>
+        <div class="box2-main">
+          <div class="box2">
+            <input type="text" placeholder="Your Name" class="input" />
+            <input type="text" placeholder="Your Email" class="input" />
+          </div>
+          <div class="text-box">
+            <textarea placeholder="Your suggestion..."></textarea>
+            <div class="foot-btn">
+              <button>
+                Send<span class="material-symbols-outlined"> send </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Copyright &copf; Ajay - All rights reserved 2024</footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
